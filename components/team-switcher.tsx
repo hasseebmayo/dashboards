@@ -1,6 +1,6 @@
 "use client"
 
-import { RiAddLine, RiExpandUpDownLine } from "@remixicon/react"
+import { ChevronsUpDown, Plus } from "lucide-react"
 import * as React from "react"
 import {
   DropdownMenu,
@@ -53,7 +53,7 @@ export function TeamSwitcher({
                   {activeTeam?.name ?? "Select a Team"}
                 </span>
               </div>
-              <RiExpandUpDownLine
+              <ChevronsUpDown
                 className="ms-auto text-muted-foreground/60"
                 size={20}
                 aria-hidden="true"
@@ -84,7 +84,7 @@ export function TeamSwitcher({
             ))}
             <DropdownMenuSeparator />
             <DropdownMenuItem className="gap-2 p-2">
-              <RiAddLine className="opacity-60" size={16} aria-hidden="true" />
+              <Plus className="opacity-60" size={16} aria-hidden="true" />
               <div className="font-medium">Add team</div>
             </DropdownMenuItem>
           </DropdownMenuContent>

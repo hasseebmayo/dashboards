@@ -1,14 +1,14 @@
 import {
-  RiBardLine,
-  RiCodeSSlashLine,
-  RiLayoutLeftLine,
-  RiLeafLine,
-  RiLoginCircleLine,
-  RiLogoutBoxLine,
-  RiScanLine,
-  RiSettings3Line,
-  RiUserFollowLine,
-} from "@remixicon/react"
+  Code2,
+  Leaf,
+  LogIn,
+  LogOut,
+  PanelLeft,
+  ScanLine,
+  Settings,
+  Sparkles,
+  UserPlus,
+} from "lucide-react"
 import type * as React from "react"
 import { SearchForm } from "@/components/search-form"
 import { TeamSwitcher } from "@/components/team-switcher"
@@ -50,38 +50,38 @@ const data = {
         {
           title: "Dashboard",
           url: "#",
-          icon: RiScanLine,
+          icon: ScanLine,
         },
         {
           title: "Insights",
           url: "#",
-          icon: RiBardLine,
+          icon: Sparkles,
         },
         {
           title: "Contacts",
           url: "#",
-          icon: RiUserFollowLine,
+          icon: UserPlus,
           isActive: true,
         },
         {
           title: "Tools",
           url: "#",
-          icon: RiCodeSSlashLine,
+          icon: Code2,
         },
         {
           title: "Integration",
           url: "#",
-          icon: RiLoginCircleLine,
+          icon: LogIn,
         },
         {
           title: "Layouts",
           url: "#",
-          icon: RiLayoutLeftLine,
+          icon: PanelLeft,
         },
         {
           title: "Reports",
           url: "#",
-          icon: RiLeafLine,
+          icon: Leaf,
         },
       ],
     },
@@ -92,12 +92,12 @@ const data = {
         {
           title: "Settings",
           url: "#",
-          icon: RiSettings3Line,
+          icon: Settings,
         },
         {
           title: "Help Center",
           url: "#",
-          icon: RiLeafLine,
+          icon: Leaf,
         },
       ],
     },
@@ -151,7 +151,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton className="font-medium gap-3 h-9 rounded-md bg-gradient-to-r hover:bg-transparent hover:from-sidebar-accent hover:to-sidebar-accent/40 data-[active=true]:from-primary/20 data-[active=true]:to-primary/5 [&>svg]:size-auto">
-              <RiLogoutBoxLine
+              <LogOut
                 className="text-muted-foreground/60 group-data-[active=true]/menu-button:text-primary"
                 size={22}
                 aria-hidden="true"

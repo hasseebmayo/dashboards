@@ -1,8 +1,8 @@
 "use client"
 
 import { Slot } from "@radix-ui/react-slot"
-import { RiLayoutLeftLine } from "@remixicon/react"
 import { cva, type VariantProps } from "class-variance-authority"
+import { PanelLeft } from "lucide-react"
 import * as React from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -248,7 +248,7 @@ function SidebarTrigger({
       }}
       {...props}
     >
-      <RiLayoutLeftLine className="size-5.5" size={22} aria-hidden="true" />
+      <PanelLeft className="size-5.5" size={22} aria-hidden="true" />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

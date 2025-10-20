@@ -1,4 +1,4 @@
-import { RiLogoutBoxLine, RiSettingsLine, RiTeamLine } from "@remixicon/react"
+import { LogOut, Settings, Users } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
@@ -39,25 +39,17 @@ export default function UserDropdown() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <RiSettingsLine
-              size={16}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+            <Settings size={16} className="opacity-60" aria-hidden="true" />
             <span>Account settings</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <RiTeamLine size={16} className="opacity-60" aria-hidden="true" />
+            <Users size={16} className="opacity-60" aria-hidden="true" />
             <span>Affiliate area</span>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <RiLogoutBoxLine
-            size={16}
-            className="opacity-60"
-            aria-hidden="true"
-          />
+          <LogOut size={16} className="opacity-60" aria-hidden="true" />
           <span>Sign out</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
