@@ -1,0 +1,5 @@
+export { BillingTab } from "./billing-tab"
+export { MedicalInfoTab } from "./medical-info-tab"
+export { NotificationsTab } from "./notifications-tab"
+export { ProfileTab } from "./profile-tab"
+export { SecurityTab } from "./security-tab"

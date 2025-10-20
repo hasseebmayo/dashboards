@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# Validate commit message with commitlint (conventional)
+if command -v pnpm >/dev/null 2>&1 && pnpm -v >/dev/null 2>&1; then
+	pnpm exec commitlint --extends @commitlint/config-conventional --edit "$1"
+else
+	npx --yes @commitlint/cli commitlint --extends @commitlint/config-conventional --edit "$1"
+fi
